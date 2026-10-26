@@ -1,4 +1,4 @@
-name: Build QELVO AI APKs
+name: Build QELVO AI APK
 
 on:
   workflow_dispatch:
