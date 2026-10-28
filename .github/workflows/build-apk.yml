@@ -48,7 +48,7 @@ jobs:
     timeout-minutes: 45
     defaults:
       run:
-        working-directory: app
+        working-directory: qelvo-ai/app
     steps:
       - uses: actions/checkout@v4
 
@@ -172,7 +172,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: qelvo-apk
-          path: app/build/${{ steps.apk.outputs.name }}
+          path: qelvo-ai/app/build/${{ steps.apk.outputs.name }}
           retention-days: 14
 
       # Release memudahkan unduh dari HP: satu tautan langsung ke APK,
