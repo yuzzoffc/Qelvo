@@ -58,7 +58,7 @@ jobs:
       - name: Cari folder proyek
         working-directory: .
         run: |
-          [ -f app/pubspec.yaml ] && exit 0
+          [ -f qelvo-ai/app/pubspec.yaml ] && exit 0
           dir=""
           while IFS= read -r f; do
             if grep -q '^name: qelvo_ai' "$f"; then dir=$(dirname "$f"); break; fi
